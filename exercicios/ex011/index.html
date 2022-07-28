@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+</head>
+<body>
+    <div id="app">
+      
+    </div>
+    <script>
+        var agora = new Date()
+
+        var app = document.querySelector('#app')
+
+        const loop = setInterval( () => {
+
+            var hora = agora.getHours()
+            var minutos = agora.getMinutes()
+            var segundos = agora.getSeconds()
+
+            app.innerHTML = (`Agora são ${hora}:${minutos}:${segundos}!`)
+
+            if(hora < 12 ){
+                app.innerHTML += ('<br>Bom dia!')
+            }
+            else if(hora < 18){
+                app.innerHTML += ('<br>Boa tarde!')
+            }
+            else{
+                app.innerHTML += ('<br>Boa Noite!')
+            }
+
+
+} ,10);
+console.log(loop)
+
+    </script> 
+</body>
+</html>

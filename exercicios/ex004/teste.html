@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <h1>Essa vai ser a tentativa da minha primeira calculadora:</h1>
+
+    <script>
+        var n1 = Number(window.prompt('digite o seu primeiro numero da operação:'))
+        var operação = window.prompt('digite o numero correpondente a operação: 1-soma 2-adição 3-multiplicação 4-divisão 5-resto da divisão 6-potenciação')
+        var n2 = Number(window.prompt('digite o seu segundo numero da operação:'))
+        if (operação == 1){
+            var resultado = n1 + n2
+            document.write('O resultado é: ' + resultado )
+        }
+
+        if (operação == 2){
+            var resultado = n1 - n2
+            document.write('O resultado é: ' + resultado )
+        }
+        if (operação == 3){
+            var resultado = n1 * n2
+            document.write('O resultado é: ' + resultado )
+        }
+        if (operação == 4){
+            var resultado = n1 / n2
+            document.write('O resultado é: ' + resultado )
+        }
+        if (operação == 5){
+            var resultado = n1 % n2
+            document.write('O resultado é: ' + resultado )
+        }
+        if (operação == 6){
+            var resultado = n1 ** n2
+            document.write('O resultado é: ' + resultado )
+        }
+        
+        
+
+    </script>
+</body>
+</html>

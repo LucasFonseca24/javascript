@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Sistema de multa</title>
+</head>
+<body>
+    <h1>Indentifição de nacionalidade</h1>
+    <p>Digite aqui a sua nacionalidade: <input type="text" placeholder="Ex: Brasil" id="nacionalidade"> <input type="button" value="Verificar" onclick="ind()"></p>
+    <div id="res">
+        
+    </div>
+    <script>
+        var n = document.querySelector('#nacionalidade')
+        var res = document.getElementById('res')
+        function ind(){
+            res.innerHTML = ('<p>Bem vindo ao Brasil!</p>')
+            if(n.value == 'Brasil'){
+                res.innerHTML = ('<p>Bem vindo de volta ao Brasil!</p>')
+                res.innerHTML += ('Nacionalidade: Brasileiro!')
+            }
+            else{
+                res.innerHTML += ('Nacionalidade: Estrangeiro!')
+            }
+            res.innerHTML += ('<br><br>Tenha um otimo dia.')
+        }
+    </script>
+</body>
+</html>
